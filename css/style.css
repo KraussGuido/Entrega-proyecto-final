@@ -1,0 +1,644 @@
+/* ESTRUCTURA */
+* {
+ font-family: Tahoma;
+ scroll-behavior: smooth;
+ max-width: 1920px;
+}
+.container {
+ max-width: 1920px;
+ padding: 0px;
+}
+.row-Header {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+}
+.col-12-Header {
+ color: white;
+ list-style-type: none;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+.col-12-Header li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+}
+.col-12-Header li a:hover {
+ color: #ff4655;
+ transition: all .5s ease-in-out;
+}
+i {
+  font-size: 15px;
+  color: white;
+}
+i:hover {
+ color: #ff4655;
+ transition: all .5s ease-in-out;
+}
+.riotgameslogo {
+    width: 60px;
+}
+.col-12-Main{
+  background-image: url(../images/china1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0px 0px 0px;
+}
+.col-12-Footer {
+  width: 100%;
+  height: 50px;
+  background-color: #121212;
+  padding: 0;
+  margin: 0;
+}
+
+/* ESTRUCTURA */
+
+/* INDEX */
+.ChampionsTourLogo {
+  width: 160px;
+}
+.Logo {
+  margin: 15px;
+  display: flex;
+  color: white;
+  background-color: #1E1E1E;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  flex-direction: column;
+}
+.LogoChampions {
+  margin-top: 10px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 32px;
+  padding:  0px 10px;
+}
+h2 {
+  font-size: 24px;    
+}
+.row {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.col-3-Home {
+  padding: 0;
+  display: flex;
+  width: 230px;
+  height: 320px;
+  background-color: #1E1E1E;
+  box-shadow: 16px 20px 20px #121212;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.col-3-Home::before {
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-image: conic-gradient(#ff4655 20deg, transparent 120deg);
+  animation: rotar 2s linear infinite;
+}
+.col-3-Home::after {
+  content: "";
+  position: absolute;
+  height: 318px;
+  width: 228px;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.TeamsHome {
+ border-collapse: collapse;
+ color: white;
+ width: 100%;
+ height: 210px;
+ z-index: 2;
+}
+
+.Jugadores {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  height: 48px;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 1;
+  background-color: #1E1E1E;
+}
+ul {
+  padding: 0px;
+}
+.CaptionIndex  {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  caption-side: top;
+  width: 80%;
+  padding: 0px;
+  color: white;
+  text-align: center;
+  background-color: #1E1E1E;
+  margin: 0px 20px;
+}
+caption  {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  caption-side: top;
+  padding: 0px;
+  color: white;
+  text-align: center;
+  background-color: #1E1E1E;
+}
+.stages {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.pais {
+  padding: 10px;
+}
+.paisicon {
+  width: 25px;
+}
+
+.Jugadores:hover {
+  opacity: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: all .3s ease-in-out;
+  background-color: #121212;
+}
+.Players:hover {
+ opacity: 1;
+ transition: all .5s ease-in-out;
+}
+.Players {
+ align-items: center;
+ opacity: 0;
+}
+
+
+/* EQUIPOS */
+.leviatan {
+  background-image:url(../icons/champions2024/championsteams/lev.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.g2 {
+  background-image:url(../icons/champions2024/championsteams/g2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.kru {
+  background-image:url(../icons/champions2024/championsteams/kru.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.sentinels {
+  background-image:url(../icons/champions2024/championsteams/sen.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.edg {
+  background-image:url(../icons/champions2024/championsteams/edg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.fpx {
+  background-image:url(../icons/champions2024/championsteams/fpx.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.trace {
+  background-image:url(../icons/champions2024/championsteams/trace.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.blg {
+  background-image:url(../icons/champions2024/championsteams/blg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.fnc {
+  background-image:url(../icons/champions2024/championsteams/fnc.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.vit {
+  background-image:url(../icons/champions2024/championsteams/vit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.th {
+  background-image:url(../icons/champions2024/championsteams/th.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.fut {
+  background-image:url(../icons/champions2024/championsteams/fut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.gg {
+  background-image:url(../icons/champions2024/championsteams/gg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.drx {
+  background-image:url(../icons/champions2024/championsteams/drx.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.prx {
+  background-image:url(../icons/champions2024/championsteams/pr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+.tal {
+  background-image:url(../icons/champions2024/championsteams/tal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+/* CHAMPIONS */
+
+.TableChampions {
+ border-collapse: collapse;
+ color: white;
+ width: 400px;
+ height: 250px;
+ background-color: #1E1E1E;
+ border-bottom-right-radius: 10px;
+ border-bottom-left-radius: 10px;
+}
+
+.col-3-Champions {
+  display: flex;
+  margin: 10px 40px;
+  width: 400px;
+}
+.champs {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+.equipos {
+  text-align: center;
+  padding-left: 20px;
+  width: 200px;
+  height: 270px;
+  background-color: #1E1E1E;
+}
+.club {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  height: 60px;
+}
+.nameclub {
+  padding-left: 20px;
+}
+.up {
+  width: 30px;
+  background-color: #145A32;
+  text-align: center;
+}
+.down {
+  background-color: #641E16;
+  text-align: center;
+}
+.score {
+  width: 60px;
+  text-align: center;
+}
+
+.downRad {
+ background-color: #641E16;
+ text-align: center;
+ border-bottom-left-radius: 10px;
+}
+.scoreRad {
+ width: 60px;
+ text-align: center;
+ border-bottom-right-radius: 10px;
+}
+
+.hoverchampionsup:hover {
+  cursor: pointer;
+  width: 60px;
+  background-color: #145A32;
+  transition: all .8s ease-in-out;
+}
+.hoverchampionsbot:hover{
+  cursor: pointer;
+  color: white;
+  background-color: #641E16;
+  transition: all .8s ease-in-out;
+}
+
+.BracketsC {
+  margin: 16px 0px;
+  border-radius: 10px;
+  background-color: #1E1E1E;
+}
+
+.bracketsChampions {
+  color: #ffffff;
+  margin-top: 50px;
+  height: 800px;
+}
+.clubChamps {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 240px;
+  align-items: center;
+  height: 40px;
+}
+.scoreChamps {
+  width: 40px;
+  text-align: center;
+}
+.colpos {
+  color: #ffffff;
+  width: 280px;
+  height: 30px;
+  background-color: #1E1E1E;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col1 {
+  width: 280px;
+  height: 40px;
+}
+.col2 {
+  margin: 50px 0px 0px 10px;
+  width: 280px;
+  height: 40px;
+}
+.col3 {
+  margin: 130px 0px 0px 24px;
+  width: 280px;
+  height: 40px;
+}
+.col4 {
+  margin: 280px 0px 0px 32px;
+  width: 280px;
+  height: 40px;
+}
+.col5 {
+  margin-top: 60px;
+  width: 280px;
+  height: 40px;
+}
+.col6 {
+  margin: 50px 0px 0px 10px;
+  width: 280px;
+  height: 40px;
+}
+.col7 {
+  margin: 90px 0px 0px 14px;
+  width: 280px;
+  height: 40px;
+}
+.col8 {
+  margin: 70px 0px 0px 24px;
+  width: 280px;
+  height: 40px;
+}
+
+.row-Champs{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  height: 170px;
+  margin: 20px 40px;
+}
+.row-ChampsPos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding-top: 20px;
+  margin-left: 40px;
+}
+.clubChampsWin {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 240px;
+  align-items: center;
+  height: 40px;
+  background-color: #145A32;
+  border-bottom-left-radius: 10px;
+  z-index: 2;
+}
+.scoreChampsWin {
+  width: 40px;
+  text-align: center;
+  background-color: #145A32;
+  border-bottom-right-radius: 10px;
+}
+.clubChampsWinTop {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+  background-color: #145A32;
+  border-top-left-radius: 10px;
+}
+.scoreChampsWinTop {
+  width: 40px;
+  text-align: center;
+  background-color: #145A32;
+  border-top-right-radius: 10px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding: 150px 0px;
+  height: 100%;
+}
+.swiper-slide {
+  width: 270px;
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ff4655;
+}
+.iconsAgents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.iconsAgents i {
+  font-size: 20px;
+  color: #ffffff;
+}
+.pj-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pj-txt {
+  flex-basis: 50%;
+  text-align: left;
+}
+.pj-txt span {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.pj-img {
+  position: absolute;
+  flex-basis: 50%;
+  text-align: right;
+}
+.pj-img img {
+  width: 300px;
+}
+
+.skills {
+  display: flex;
+  width: 45px;
+  margin: 16px 10px 0px 0px;
+}
+
+#Vyse {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Vyse/A_History_Erased_Card_Large.webp);
+}
+#Astra {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Astra/Astra_--_TEASER_02.webp);
+}
+#Clove {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Clove/VALORANT_Clove_Card_Large.webp);
+}
+#Iso {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Iso/VALORANT_Iso_Card_Large.webp);
+}
+#Fade {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Fade/VALORANT_Fade_Card_Large.webp);
+}
+#Chamber {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Chamber/VALORANT_Chamber_Card_Large.webp);
+}
+#Harbor {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Harbor/VALORANT_Harbor_Card_Large.webp);
+}
+#Reyna {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Reyna/VALORANT_Reyna_Card_Large.webp);
+}
+#Geeko {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Geeko/VALORANT_Gekko_Card_Large.webp);
+}
+#Cypher {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/Cypher/VALORANT_Cypher_Card_Large.webp);
+}
+
+.col-12-Skins {
+  background-image: url(../images/china1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 0px 0px;
+}
+.SliderSkins {
+ width: 1280px;
+ height: auto;
+ padding: 160px 100px;
+ overflow: hidden;
+}
+.SliderSkins ul {
+ display: flex;
+ padding: 0;
+ width: 400%;
+ animation: slide 20s infinite alternate ease-in-out;
+
+}
+.SliderSkins li {
+  width: 100%;
+  list-style-type: none;
+  position: relative;
+
+}
+.SliderSkins ul li img {
+  height: 600px;
+  width: 100%;
+  border-radius: 10px;
+}
+@keyframes slide {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+
+  25% { margin-left: -100%;}
+  45% { margin-left: -100%;}
+
+  50% { margin-left: -200%;}
+  75% { margin-left: -200%;}
+
+  80% { margin-left: -300%;}
+  100% { margin-left: -300%;}
+
+}
+
+@media(max-width:900px) {
+
+  .SliderSkins {
+    width: 340px;
+  }
+}
