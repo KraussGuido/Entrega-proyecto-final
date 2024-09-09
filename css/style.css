@@ -8,24 +8,34 @@
  max-width: 1920px;
  padding: 0px;
 }
-.row-Header {
+/* .row-Header {
   background-color: #121212;
   display: flex;
   flex-direction: column;
+} */
+.col-12 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
-.col-12-Header {
+.Header {
  color: white;
  list-style-type: none;
  display: inline-flex;
  align-items: center;
- justify-content: center;
 }
-.col-12-Header li a {
+.Header ul {
+  padding-top: 10px;
+  display: inline-flex;
+  list-style-type: none;
+  align-items: center;
+}
+.Header li a {
   text-decoration: none;
   color: white;
   padding-left: 15px;
 }
-.col-12-Header li a:hover {
+.Header li a:hover {
  color: #ff4655;
  transition: all .5s ease-in-out;
 }
@@ -38,8 +48,9 @@ i:hover {
  transition: all .5s ease-in-out;
 }
 .riotgameslogo {
-    width: 60px;
+ width: 60px;
 }
+
 .col-12-Main{
   background-image: url(../images/china1.jpg);
   background-repeat: no-repeat;
@@ -83,7 +94,8 @@ h1 {
   padding:  0px 10px;
 }
 h2 {
-  font-size: 24px;    
+  font-size: 24px;
+  padding: 16px; 
 }
 .row {
   display: flex;
