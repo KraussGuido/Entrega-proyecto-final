@@ -80,6 +80,9 @@ html, body {
     background-size: cover;
     padding: 10px 0px 0px 0px;
 }
+.col-12 {
+    padding: 0px;
+}
 .Footer {
     width: 100%;
     height: 50px;
@@ -130,124 +133,73 @@ html, body {
               transform: rotate(360deg);
             }
         }
+        .TeamsHome {
+            border-collapse: collapse;
+            color: white;
+            width: 100%;
+            height: 210px;
+            z-index: 2;
+            .CaptionIndex  {
+    
+                width: 80%;
+                
+                margin: 0px 20px;
+              }
+              .leviatan {
+                background-image:url(../icons/champions2024/championsteams/lev.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                block-size: cover;
+                   .Players {
+                    align-items: center;
+                    opacity: 0;
+                    &:hover {
+                        opacity: 1;
+                    transition: all .5s ease-in-out;
+                    }
+                    .Jugadores {
+                        display: flex;
+                        width: 100%;
+                        list-style-type: none;
+                        height: 48px;
+                        justify-content: flex-start;
+                        align-items: center;
+                        opacity: 1;
+                        background-color: #1E1E1E;
+                        &:hover {
+                            opacity: 1;
+                            cursor: pointer;
+                            padding: 0;
+                            transition: all .3s ease-in-out;
+                            background-color: #121212;
+                            }
+                        }
+                    .pais {
+                        padding: 10px;
+                      }
+                      .paisicon {
+                        width: 25px;
+                    }
+                }
+            }
+            .stages {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 20px;
+            }
+        }
+            
     }
 }
-//         .TeamsHome {
-//             border-collapse: collapse;
-//             color: white;
-//             width: 100%;
-//             height: 210px;
-//             z-index: 2;
-//             .CaptionIndex {
-//                 @extend %Caption;
-//                 width: 80%;
-//                 margin: 0px 20px;
-//             }
-//             .Players {
-//                 align-items: center;
-//                 opacity: 0;
-//                 &:hover {
-//                     opacity: 1;
-//                     transition: all .5s ease-in-out;
-//                 }
-//                } 
-//         	.Jugadores {
-//                  display: flex;
-//                  width: 100%;
-//                  list-style-type: none;
-//                  height: 48px;
-//                  justify-content: flex-start;
-//                  align-items: center;
-//                  opacity: 1;
-//                  background-color: #1E1E1E;
-//                  &:hover {
-//                     opacity: 1;
-//                     cursor: pointer;
-//                     padding: 0;
-//                     transition: all .3s ease-in-out;
-//                     background-color: #121212;
-//                   }
-//                     .p {
-//                       padding: 0px;
-//                       margin: 0px;
-//                       }
-//                 }
-//                 .pais {
-//                     padding:  0px 10px 0px 0px;
-//                     .paisicon {
-//                         width: 25px;
-//                     }
-//                 }
-//                 .stages {
-//                     border-bottom-left-radius: 10px;
-//                     border-bottom-right-radius: 10px;
-//                 }    
-//            }
-//     }
-// }
-.TeamsHome {
- border-collapse: collapse;
- color: white;
- width: 100%;
- height: 210px;
- z-index: 2;
-}
 
-.Jugadores {
-  display: flex;
-  width: 100%;
-  list-style-type: none;
-  height: 48px;
-  justify-content: flex-start;
-  align-items: center;
-  opacity: 1;
-  background-color: #1E1E1E;
-} 
-  .CaptionIndex  {
-    
-    width: 80%;
-    
-    margin: 0px 20px;
-  }
+
+
+
+  
   caption  {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     caption-side: top;
     padding: 0px;
     color: white;
-  
-  
-  }
-  .stages {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-  .pais {
-    padding: 10px;
-  }
-  .paisicon {
-    width: 25px;
-  }
-  
-  .Jugadores:hover {
-    opacity: 1;
-    cursor: pointer;
-    padding: 0;
-    transition: all .3s ease-in-out;
-    background-color: #121212;
-  }
-  .Players:hover {
-   opacity: 1;
-   transition: all .5s ease-in-out;
-  }
-  .Players {
-   align-items: center;
-   opacity: 0;
   }
 
-.leviatan {
-    background-image:url(../icons/champions2024/championsteams/lev.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    block-size: cover;
-}
