@@ -19,7 +19,7 @@ html, body {
   padding: 10px 10px;
 }
 
-.Headertop ul li i:hover, .Header ul li a:hover {
+.Footer ul li a:hover, .Headertop ul li i:hover, .Header ul li a:hover {
   color: #ff4655;
   transition: all 0.5s ease-in-out;
 }
@@ -77,13 +77,28 @@ html, body {
 }
 
 .Footer {
+  display: flex;
   width: 100%;
-  height: 50px;
+  height: 90px;
   background-color: #121212;
   padding: 0;
   margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
+.Footer ul {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 20px;
+}
+.Footer ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+}
 .row {
   display: flex;
   color: white;

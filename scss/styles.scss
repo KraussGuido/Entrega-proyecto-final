@@ -102,11 +102,32 @@ html, body {
     padding: 0px;
 }
 .Footer {
+    display: flex;
     width: 100%;
-    height: 50px;
+    height: 90px;
     background-color: #121212;
     padding: 0;
     margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ul {
+        display: inline-flex;
+        list-style-type: none;
+        justify-content: center;
+        padding: 0px;
+        margin-top: 20px;
+        li {
+            a{
+                text-decoration: none;
+                color: white;
+                padding-left: 15px;
+                &:hover {
+                    @extend %NavHover
+                }
+            }   
+        }
+    }
 }
 .row {
     display: flex;
