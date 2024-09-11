@@ -301,4 +301,88 @@ caption  {
     padding: 0px;
     color: white;
 }
+.swiper {
+  width: 100%;
+  padding: 150px 0px;
+  height: 100%;
+}
+.swiper-slide {
+  width: 270px;
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ff4655;
+}
+.iconsAgents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  i {
+    font-size: 20px;
+  color: #ffffff;
+  }
+}
+.pj-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pj-txt {
+  flex-basis: 50%;
+  text-align: left;
+  span {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+.pj-img {
+  position: absolute;
+  flex-basis: 50%;
+  text-align: right;
+  img {
+    width: 300px;
+  }
+}
+.skills {
+  display: flex;
+  width: 45px;
+  margin: 16px 10px 0px 0px;
+}
+
+#Vyse {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/vyse/vysebckg.webp);
+}
+#Astra {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/astra/astrabckg.webp);
+}
+#Clove {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/clove/clovebckg.webp);
+}
+#Iso {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/iso/isobckg.webp);
+}
+#Fade {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/fade/fadebckg.webp);
+}
+#Chamber {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/chamber/chamberbckg.webp);
+}
+#Harbor {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/harbor/harborbckg.webp);
+}
+#Reyna {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/reyna/reynabckg.webp);
+}
+#Geeko {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/geeko/geekobckg.webp);
+}
+#Cypher {
+  background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/cypher/cypherbckg.webp);
+}
 
