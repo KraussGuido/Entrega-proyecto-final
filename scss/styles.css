@@ -24,7 +24,7 @@ html, body {
   transition: all 0.5s ease-in-out;
 }
 
-.row .col-3-Home .TeamsHome .leviatan {
+.tal, .prx, .drx, .gg, .fut, .th, .vit, .fnc, .blg, .trace, .fpx, .edg, .sentinels, .kru, .g2, .leviatan {
   background-repeat: no-repeat;
   background-position: center;
   block-size: cover;
@@ -78,7 +78,7 @@ html, body {
   padding: 0px;
   margin: 0px;
 }
-.row .col-3-Home {
+.row .col-3 {
   padding: 0;
   display: flex;
   width: 230px;
@@ -92,7 +92,7 @@ html, body {
   position: relative;
   overflow: hidden;
 }
-.row .col-3-Home::before {
+.row .col-3::before {
   content: "";
   position: absolute;
   height: 400px;
@@ -100,7 +100,7 @@ html, body {
   background-image: conic-gradient(#ff4655 20deg, transparent 120deg);
   animation: rotar 2s linear infinite;
 }
-.row .col-3-Home::after {
+.row .col-3::after {
   content: "";
   position: absolute;
   height: 318px;
@@ -116,29 +116,26 @@ html, body {
     transform: rotate(360deg);
   }
 }
-.row .col-3-Home .TeamsHome {
+.row .col-3 .TeamsHome {
   border-collapse: collapse;
   color: white;
   width: 100%;
   height: 210px;
   z-index: 2;
 }
-.row .col-3-Home .TeamsHome .CaptionIndex {
+.row .col-3 .TeamsHome .CaptionIndex {
   width: 80%;
   margin: 0px 20px;
 }
-.row .col-3-Home .TeamsHome .leviatan {
-  background-image: url(../icons/champions2024/championsteams/lev.png);
-}
-.row .col-3-Home .TeamsHome .leviatan .Players {
+.row .col-3 .TeamsHome tr .Players {
   align-items: center;
   opacity: 0;
 }
-.row .col-3-Home .TeamsHome .leviatan .Players:hover {
+.row .col-3 .TeamsHome tr .Players:hover {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }
-.row .col-3-Home .TeamsHome .leviatan .Players .Jugadores {
+.row .col-3 .TeamsHome tr .Players .Jugadores {
   display: flex;
   width: 100%;
   list-style-type: none;
@@ -148,25 +145,89 @@ html, body {
   opacity: 1;
   background-color: #1E1E1E;
 }
-.row .col-3-Home .TeamsHome .leviatan .Players .Jugadores:hover {
+.row .col-3 .TeamsHome tr .Players .Jugadores:hover {
   opacity: 1;
   cursor: pointer;
   padding: 0;
   transition: all 0.3s ease-in-out;
   background-color: #121212;
 }
-.row .col-3-Home .TeamsHome .leviatan .Players .pais {
+.row .col-3 .TeamsHome tr .Players .pais {
   padding: 10px;
 }
-.row .col-3-Home .TeamsHome .leviatan .Players .paisicon {
+.row .col-3 .TeamsHome tr .Players .paisicon {
   width: 25px;
 }
-.row .col-3-Home .TeamsHome .stages {
+.row .col-3 .TeamsHome .stages {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 20px;
 }
-.row .col-3-Home .TeamsHome ul {
+.row .col-3 .TeamsHome ul {
   padding: 0px;
+}
+
+.leviatan {
+  background-image: url(../icons/champions2024/championsteams/lev.png);
+}
+
+.g2 {
+  background-image: url(../icons/champions2024/championsteams/g2.png);
+}
+
+.kru {
+  background-image: url(../icons/champions2024/championsteams/kru.png);
+}
+
+.sentinels {
+  background-image: url(../icons/champions2024/championsteams/sen.png);
+}
+
+.edg {
+  background-image: url(../icons/champions2024/championsteams/edg.png);
+}
+
+.fpx {
+  background-image: url(../icons/champions2024/championsteams/fpx.png);
+}
+
+.trace {
+  background-image: url(../icons/champions2024/championsteams/trace.png);
+}
+
+.blg {
+  background-image: url(../icons/champions2024/championsteams/blg.png);
+}
+
+.fnc {
+  background-image: url(../icons/champions2024/championsteams/fnc.png);
+}
+
+.vit {
+  background-image: url(../icons/champions2024/championsteams/vit.png);
+}
+
+.th {
+  background-image: url(../icons/champions2024/championsteams/th.png);
+}
+
+.fut {
+  background-image: url(../icons/champions2024/championsteams/fut.png);
+}
+
+.gg {
+  background-image: url(../icons/champions2024/championsteams/gg.png);
+}
+
+.drx {
+  background-image: url(../icons/champions2024/championsteams/drx.png);
+}
+
+.prx {
+  background-image: url(../icons/champions2024/championsteams/pr.png);
+}
+
+.tal {
+  background-image: url(../icons/champions2024/championsteams/tal.png);
 }
 
 caption {
