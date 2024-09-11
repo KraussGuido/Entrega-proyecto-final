@@ -58,6 +58,19 @@ html, body {
   background-size: cover;
   padding: 10px 0px 0px 0px;
 }
+.Main .ChampionsTourLogo {
+  width: 160px;
+}
+.Main .Logo {
+  margin: 15px;
+  display: flex;
+  color: white;
+  background-color: #1E1E1E;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  flex-direction: column;
+}
 
 .col-12 {
   padding: 0px;
