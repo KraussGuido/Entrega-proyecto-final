@@ -316,45 +316,45 @@ caption  {
   text-align: center;
   border-radius: 10px;
   border: 1px solid #ff4655;
-}
-.iconsAgents {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-  i {
-    font-size: 20px;
-  color: #ffffff;
-  }
-}
-.pj-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.pj-txt {
-  flex-basis: 50%;
-  text-align: left;
-  span {
-    font-size: 25px;
+  .iconsAgents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    i {
+      font-size: 20px;
     color: #ffffff;
-    font-weight: bold;
+    }
   }
-}
-.pj-img {
-  position: absolute;
-  flex-basis: 50%;
-  text-align: right;
-  img {
-    width: 300px;
-  }
-}
-.skills {
-  display: flex;
-  width: 45px;
-  margin: 16px 10px 0px 0px;
-}
+  .pj-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+  }
+  .pj-txt {
+    flex-basis: 50%;
+    text-align: left;
+    .skills {
+      display: flex;
+      width: 45px;
+      margin: 16px 10px 0px 0px;
+    }
+    span {
+      font-size: 25px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+  .pj-img {
+    position: absolute;
+    flex-basis: 50%;
+    text-align: right;
+    img {
+      width: 300px;
+    }
+  }
+}
 #Vyse {
   background: linear-gradient(rgba(5, 7, 12, 0.9),rgba(5, 7, 12, 0.6)),url(../images/agents/vyse/vysebckg.webp);
 }
