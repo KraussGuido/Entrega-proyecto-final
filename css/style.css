@@ -4,67 +4,11 @@
  scroll-behavior: smooth;
  max-width: 1920px;
 }
-.container {
- max-width: 1920px;
- padding: 0px;
-}
-/* .row-Header {
-  background-color: #121212;
-  display: flex;
-  flex-direction: column;
-} */
 .col-12 {
- display: flex;
  justify-content: center;
  align-items: center;
+ padding: 0;
 }
-.Header {
- color: white;
- list-style-type: none;
- display: inline-flex;
- align-items: center;
-}
-.Header ul {
-  padding-top: 10px;
-  display: inline-flex;
-  list-style-type: none;
-  align-items: center;
-}
-.Header li a {
-  text-decoration: none;
-  color: white;
-  padding-left: 15px;
-}
-.Header li a:hover {
- color: #ff4655;
- transition: all .5s ease-in-out;
-}
-i {
-  font-size: 15px;
-  color: white;
-}
-i:hover {
- color: #ff4655;
- transition: all .5s ease-in-out;
-}
-.riotgameslogo {
- width: 60px;
-}
-
-.col-12-Main{
-  background-image: url(../images/china1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px 0px 0px 0px;
-}
-.col-12-Footer {
-  width: 100%;
-  height: 50px;
-  background-color: #121212;
-  padding: 0;
-  margin: 0;
-}
-
 /* ESTRUCTURA */
 
 /* INDEX */
@@ -97,14 +41,9 @@ h2 {
   font-size: 24px;
   padding: 16px; 
 }
-.row {
-  display: flex;
-  color: white;
-  justify-content: space-around;
-  padding: 0px;
-}
 
-.col-3-Home {
+
+/* .col-3-Home {
   padding: 0;
   display: flex;
   width: 230px;
@@ -142,17 +81,17 @@ h2 {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
-.TeamsHome {
+/* .TeamsHome {
  border-collapse: collapse;
  color: white;
  width: 100%;
  height: 210px;
  z-index: 2;
-}
+} */
 
-.Jugadores {
+/* .Jugadores {
   display: flex;
   width: 100%;
   list-style-type: none;
@@ -161,48 +100,22 @@ h2 {
   align-items: center;
   opacity: 1;
   background-color: #1E1E1E;
-}
-ul {
+} */
+/* ul {
   padding: 0px;
-}
-.CaptionIndex  {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  caption-side: top;
-  width: 80%;
-  padding: 0px;
-  color: white;
-  text-align: center;
-  background-color: #1E1E1E;
-  margin: 0px 20px;
-}
+} */
+
 caption  {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  caption-side: top;
   padding: 0px;
-  color: white;
-  text-align: center;
-  background-color: #1E1E1E;
-}
-.stages {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.pais {
-  padding: 10px;
-}
-.paisicon {
-  width: 25px;
 }
 
-.Jugadores:hover {
+/* .Jugadores:hover {
   opacity: 1;
   cursor: pointer;
   padding: 0;
   transition: all .3s ease-in-out;
   background-color: #121212;
-}
+} */
 .Players:hover {
  opacity: 1;
  transition: all .5s ease-in-out;
@@ -212,103 +125,54 @@ caption  {
  opacity: 0;
 }
 
-
 /* EQUIPOS */
 .leviatan {
   background-image:url(../icons/champions2024/championsteams/lev.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .g2 {
   background-image:url(../icons/champions2024/championsteams/g2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .kru {
   background-image:url(../icons/champions2024/championsteams/kru.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .sentinels {
   background-image:url(../icons/champions2024/championsteams/sen.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .edg {
   background-image:url(../icons/champions2024/championsteams/edg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .fpx {
   background-image:url(../icons/champions2024/championsteams/fpx.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .trace {
   background-image:url(../icons/champions2024/championsteams/trace.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .blg {
   background-image:url(../icons/champions2024/championsteams/blg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .fnc {
   background-image:url(../icons/champions2024/championsteams/fnc.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .vit {
   background-image:url(../icons/champions2024/championsteams/vit.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .th {
   background-image:url(../icons/champions2024/championsteams/th.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .fut {
   background-image:url(../icons/champions2024/championsteams/fut.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .gg {
   background-image:url(../icons/champions2024/championsteams/gg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .drx {
   background-image:url(../icons/champions2024/championsteams/drx.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .prx {
   background-image:url(../icons/champions2024/championsteams/pr.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .tal {
   background-image:url(../icons/champions2024/championsteams/tal.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 /* CHAMPIONS */
 
@@ -507,15 +371,7 @@ caption  {
   border-top-right-radius: 10px;
 }
 
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
+
 
 .swiper {
   width: 100%;
@@ -653,4 +509,17 @@ body {
   .SliderSkins {
     width: 340px;
   }
+}
+.containermasters {
+  display: flex;
+  justify-content: space-around;
+}
+.divmasters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+}
+.divmasters img {
+  margin: 20px;
 }
