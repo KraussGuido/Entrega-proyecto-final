@@ -24,6 +24,12 @@ html, body {
   transition: all 0.5s ease-in-out;
 }
 
+.row .col-3-Home .TeamsHome .leviatan {
+  background-repeat: no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+
 .Header ul {
   display: inline-flex;
   list-style-type: none;
@@ -123,9 +129,6 @@ html, body {
 }
 .row .col-3-Home .TeamsHome .leviatan {
   background-image: url(../icons/champions2024/championsteams/lev.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  block-size: cover;
 }
 .row .col-3-Home .TeamsHome .leviatan .Players {
   align-items: center;
@@ -161,6 +164,9 @@ html, body {
 .row .col-3-Home .TeamsHome .stages {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 20px;
+}
+.row .col-3-Home .TeamsHome ul {
+  padding: 0px;
 }
 
 caption {

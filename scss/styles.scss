@@ -35,6 +35,11 @@ html, body {
     background-position: center;
     block-size: cover;
 }
+%Clubes {
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: cover;
+}
 .Header {
     @extend %FlexNav;
     ul {
@@ -96,7 +101,7 @@ html, body {
     justify-content: space-around;
     padding: 0px;
     margin: 0px;
-    .col-3-Home {
+    .col-3 {
         padding: 0;
         display: flex;
         width: 230px;
@@ -145,11 +150,7 @@ html, body {
                 
                 margin: 0px 20px;
               }
-              .leviatan {
-                background-image:url(../icons/champions2024/championsteams/lev.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                block-size: cover;
+              tr {
                    .Players {
                     align-items: center;
                     opacity: 0;
@@ -186,9 +187,17 @@ html, body {
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 20px;
             }
+            ul {
+                padding: 0px;
+            }
         }
             
     }
+}
+
+.leviatan {
+    background-image:url(../icons/champions2024/championsteams/lev.png);
+    @extend %Clubes;
 }
 
 
