@@ -298,26 +298,26 @@ caption {
   justify-content: space-between;
   align-items: center;
 }
-.swiper-slide .pj-txt {
+.swiper-slide .pj-content .pj-txt {
   flex-basis: 50%;
   text-align: left;
 }
-.swiper-slide .pj-txt .skills {
+.swiper-slide .pj-content .pj-txt .skills {
   display: flex;
   width: 45px;
   margin: 16px 10px 0px 0px;
 }
-.swiper-slide .pj-txt span {
+.swiper-slide .pj-content .pj-txt span {
   font-size: 25px;
   color: #ffffff;
   font-weight: bold;
 }
-.swiper-slide .pj-img {
+.swiper-slide .pj-content .pj-img {
   position: absolute;
   flex-basis: 50%;
   text-align: right;
 }
-.swiper-slide .pj-img img {
+.swiper-slide .pj-content .pj-img img {
   width: 300px;
 }
 
