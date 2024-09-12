@@ -10,7 +10,7 @@ html, body {
   padding: 0px;
 }
 
-.Headertop ul li, .Header {
+.Headertop, .Header {
   color: white;
   display: inline-flex;
   list-style-type: none;
@@ -39,9 +39,6 @@ html, body {
   text-decoration: none;
   color: white;
   padding-left: 15px;
-}
-.Headertop ul li {
-  color: white;
 }
 .Headertop ul li i {
   text-decoration: none;
@@ -97,7 +94,7 @@ html, body {
 .Footer ul li a {
   text-decoration: none;
   color: white;
-  padding-left: 15px;
+  padding-left: 40px;
 }
 .row {
   display: flex;
