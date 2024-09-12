@@ -10,7 +10,7 @@ html, body {
   padding: 0px;
 }
 
-.Headertop ul li, .Header {
+.Headertop ul, .Header {
   color: white;
   display: inline-flex;
   list-style-type: none;
@@ -41,7 +41,7 @@ html, body {
   padding-left: 15px;
 }
 .Headertop ul li {
-  color: white;
+  color: #ffffff;
 }
 .Headertop ul li i {
   text-decoration: none;

@@ -60,9 +60,9 @@ html, body {
 }
 .Headertop {
   ul {
+    @extend %FlexNav;
     li {
-      @extend %FlexNav;
-      color: white;
+      color: #ffffff;
       i {
         text-decoration: none;
         color: white;
