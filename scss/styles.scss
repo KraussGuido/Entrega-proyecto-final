@@ -41,27 +41,28 @@ html, body {
   block-size: cover;
 }
 .Header {
-    @extend %FlexNav;
-    ul {
-      display: inline-flex;
-      list-style-type: none;
-      justify-content: center;
-      li {
-        a{
-          text-decoration: none;
-          color: white;
-          padding-left: 15px;
-          &:hover {
-            @extend %NavHover
-          }   
-        }   
-      }
-    }
-}
-.Headertop {
   @extend %FlexNav;
   ul {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
     li {
+      a{
+        text-decoration: none;
+        color: white;
+        padding-left: 15px;
+        &:hover {
+        @extend %NavHover
+        }   
+      }   
+    }
+  }
+}
+.Headertop {
+  ul {
+    li {
+      @extend %FlexNav;
+      color: white;
       i {
         text-decoration: none;
         color: white;
