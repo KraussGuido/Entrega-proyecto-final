@@ -396,22 +396,22 @@ caption {
   border-radius: 10px;
 }
 
-.hovertabla {
+.col-4 .tablas .shangai .hovertabla, .col-4 .tablas .madrid .hovertabla {
   display: flex;
   height: 75px;
 }
-.hovertabla .medalla {
+.col-4 .tablas .shangai .hovertabla .medalla, .col-4 .tablas .madrid .hovertabla .medalla {
   display: flex;
   width: 50px;
   align-items: center;
   justify-content: center;
 }
-.hovertabla .rewards {
+.col-4 .tablas .shangai .hovertabla .rewards, .col-4 .tablas .madrid .hovertabla .rewards {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.hovertabla .clubmasters {
+.col-4 .tablas .shangai .hovertabla .clubmasters, .col-4 .tablas .madrid .hovertabla .clubmasters {
   display: flex;
   padding: 0px 0px 0px 25px;
   align-items: center;

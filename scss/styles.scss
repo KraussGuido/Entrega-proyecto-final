@@ -407,9 +407,11 @@ caption  {
     padding: 0px 12px;
     .shangai {
       @extend %Tablas;
+      @extend %Masters;
     }
     .madrid {
       @extend %Tablas;
+      @extend %Masters;
     }
   }
 }
@@ -422,28 +424,30 @@ caption  {
   justify-content: center;
   border-radius: 10px;
 }
-
-.hovertabla {
-  display: flex;
-  height: 75px;
-  .medalla {
+%Masters {
+  .hovertabla {
     display: flex;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
-  }
-  .rewards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .clubmasters {
-    display: flex;
-    padding: 0px 0px 0px 25px;
-    align-items: center;
-    justify-content: center;
+    height: 75px;
+    .medalla {
+      display: flex;
+      width: 50px;
+      align-items: center;
+      justify-content: center;
+    }
+    .rewards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .clubmasters {
+      display: flex;
+      padding: 0px 0px 0px 25px;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
+
 .nameclub {
   padding-left: 10px;
 }
