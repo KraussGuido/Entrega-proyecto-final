@@ -394,4 +394,30 @@ caption {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+
+.clubmasters {
+  display: flex;
+  padding: 0px 0px 0px 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hovertabla {
+  display: flex;
+  height: 75px;
+}
+.hovertabla .medalla {
+  display: flex;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.hovertabla .rewards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hovertabla .nameclub {
+  padding-left: 10px;
 }/*# sourceMappingURL=styles.css.map */
