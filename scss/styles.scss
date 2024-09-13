@@ -98,6 +98,10 @@ html, body {
     align-items: center;
     border-radius: 15px;
     flex-direction: column;
+    h1 {
+      padding: 10px;
+      font-size: 28px;
+    }
   }
 }
 .col-12 {
@@ -453,5 +457,4 @@ caption  {
 .nameclub {
   padding-left: 10px;
 }
-
 

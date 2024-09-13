@@ -73,6 +73,10 @@ html, body {
   border-radius: 15px;
   flex-direction: column;
 }
+.Main .Logo h1 {
+  padding: 10px;
+  font-size: 28px;
+}
 
 .col-12 {
   padding: 0px;
