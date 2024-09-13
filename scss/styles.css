@@ -396,13 +396,6 @@ caption {
   border-radius: 10px;
 }
 
-.clubmasters {
-  display: flex;
-  padding: 0px 0px 0px 25px;
-  align-items: center;
-  justify-content: center;
-}
-
 .hovertabla {
   display: flex;
   height: 75px;
@@ -418,6 +411,13 @@ caption {
   align-items: center;
   justify-content: center;
 }
-.hovertabla .nameclub {
+.hovertabla .clubmasters {
+  display: flex;
+  padding: 0px 0px 0px 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameclub {
   padding-left: 10px;
 }/*# sourceMappingURL=styles.css.map */
