@@ -8,6 +8,10 @@ html, body {
   padding: 0;
 }
 @media (max-width: 575.98px) {
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
   .col-12 .Header {
     height: 180px;
     display: flex;
@@ -18,20 +22,14 @@ html, body {
       align-items: center;
       padding: 0;
     }
+  }
 }
-}
+
 .container {
   max-width: 1920px;
   padding: 0px;
 }
-// %FlexNav {
-//   color: white;
-//   display: inline-flex;
-//   list-style-type: none;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 10px 0px;
-// }
+
 %NavHover {
   color: #ff4655;
   transition: all .5s ease-in-out;
@@ -103,7 +101,8 @@ html, body {
   background-image: url(../images/china1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px 0px 0px 0px;
+  background-attachment: fixed;  
+  padding: 10px 0px 0px 0px; 
   .ChampionsTourLogo {
     width: 160px;
   }

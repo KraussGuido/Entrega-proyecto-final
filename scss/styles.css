@@ -8,6 +8,10 @@ html, body {
 }
 
 @media (max-width: 575.98px) {
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
   .col-12 .Header {
     height: 180px;
     display: flex;
@@ -72,6 +76,7 @@ html, body {
   background-image: url(../images/china1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 10px 0px 0px 0px;
 }
 .Main .ChampionsTourLogo {
