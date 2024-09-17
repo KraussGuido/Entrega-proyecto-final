@@ -7,6 +7,11 @@ html, body {
   padding: 0;
 }
 
+@media (max-width: 768px) {
+  .Main {
+    background-size: contain;
+  }
+}
 @media (max-width: 575.98px) {
   iframe {
     width: 400px;
@@ -36,6 +41,17 @@ html, body {
 footer ul li a:hover, .Headertop ul li i:hover, .Header ul li a:hover {
   color: #ff4655;
   transition: all 0.5s ease-in-out;
+}
+
+.CaptionIndex {
+  caption-side: top;
+  padding: 0px;
+  color: white;
+  text-align: center;
+  background-color: #1E1E1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tal, .prx, .drx, .gg, .fut, .th, .vit, .fnc, .blg, .trace, .fpx, .edg, .sentinels, .kru, .g2, .leviatan {
@@ -135,7 +151,7 @@ footer ul li a {
   padding: 0px;
   margin: 0px;
 }
-.row .col-3 {
+.row .col-3.Index {
   padding: 0;
   display: flex;
   width: 230px;
@@ -149,7 +165,7 @@ footer ul li a {
   position: relative;
   overflow: hidden;
 }
-.row .col-3::before {
+.row .col-3.Index::before {
   content: "";
   position: absolute;
   height: 400px;
@@ -157,7 +173,7 @@ footer ul li a {
   background-image: conic-gradient(#ff4655 20deg, transparent 120deg);
   animation: rotar 2s linear infinite;
 }
-.row .col-3::after {
+.row .col-3.Index::after {
   content: "";
   position: absolute;
   height: 318px;
@@ -173,26 +189,26 @@ footer ul li a {
     transform: rotate(360deg);
   }
 }
-.row .col-3 .TeamsHome {
+.row .col-3.Index .TeamsHome {
   border-collapse: collapse;
   color: white;
   width: 100%;
   height: 210px;
   z-index: 2;
 }
-.row .col-3 .TeamsHome .CaptionIndex {
+.row .col-3.Index .TeamsHome .CaptionIndex {
   width: 80%;
   margin: 0px 20px;
 }
-.row .col-3 .TeamsHome tr .Players {
+.row .col-3.Index .TeamsHome tr .Players {
   align-items: center;
   opacity: 0;
 }
-.row .col-3 .TeamsHome tr .Players:hover {
+.row .col-3.Index .TeamsHome tr .Players:hover {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }
-.row .col-3 .TeamsHome tr .Players .Jugadores {
+.row .col-3.Index .TeamsHome tr .Players .Jugadores {
   display: flex;
   width: 100%;
   list-style-type: none;
@@ -202,24 +218,24 @@ footer ul li a {
   opacity: 1;
   background-color: #1E1E1E;
 }
-.row .col-3 .TeamsHome tr .Players .Jugadores:hover {
+.row .col-3.Index .TeamsHome tr .Players .Jugadores:hover {
   opacity: 1;
   cursor: pointer;
   padding: 0;
   transition: all 0.3s ease-in-out;
   background-color: #121212;
 }
-.row .col-3 .TeamsHome tr .Players .pais {
+.row .col-3.Index .TeamsHome tr .Players .pais {
   padding: 10px;
 }
-.row .col-3 .TeamsHome tr .Players .paisicon {
+.row .col-3.Index .TeamsHome tr .Players .paisicon {
   width: 25px;
 }
-.row .col-3 .TeamsHome .stages {
+.row .col-3.Index .TeamsHome .stages {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 20px;
 }
-.row .col-3 .TeamsHome ul {
+.row .col-3.Index .TeamsHome ul {
   padding: 0px;
 }
 
@@ -288,11 +304,13 @@ footer ul li a {
 }
 
 caption {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   caption-side: top;
   padding: 0px;
   color: white;
+  text-align: center;
+  background-color: #1E1E1E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .swiper {
@@ -446,10 +464,6 @@ caption {
   justify-content: center;
 }
 
-.nameclub {
-  padding-left: 10px;
-}
-
 .CarruselSkins {
   display: flex;
   flex-direction: column;
@@ -474,7 +488,6 @@ caption {
   align-items: center;
   border-radius: 15px;
   flex-direction: column;
-  padding: 10px;
 }
 .LogoChampions .Championsinfo iframe {
   border-bottom-left-radius: 15px;
@@ -484,4 +497,150 @@ caption {
   text-align: center;
   padding: 10px;
   font-size: 28px;
+}
+
+.TableChampions {
+  border-collapse: collapse;
+  color: white;
+  width: 400px;
+  height: 250px;
+  background-color: #1E1E1E;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.col-3.Champions {
+  display: flex;
+  width: 400px;
+  margin: 10px;
+}
+
+.club {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  height: 60px;
+}
+
+.nameclub {
+  padding-left: 20px;
+}
+
+.up {
+  width: 30px;
+  background-color: #145A32;
+  text-align: center;
+}
+
+.down {
+  background-color: #641E16;
+  text-align: center;
+}
+
+.score {
+  width: 60px;
+  text-align: center;
+}
+
+.downRad {
+  background-color: #641E16;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.BracketsC {
+  margin: 10px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #1E1E1E;
+  color: #ffffff;
+}
+.BracketsC .clubChamps {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+}
+.BracketsC .scoreChamps {
+  width: 40px;
+  text-align: center;
+}
+.BracketsC .clubChampsWin {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+  background-color: #145A32;
+  border-bottom-left-radius: 10px;
+}
+.BracketsC .scoreChampsWin {
+  width: 40px;
+  text-align: center;
+  background-color: #145A32;
+  border-bottom-right-radius: 10px;
+}
+.BracketsC .clubChampsWinTop {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+  background-color: #145A32;
+  border-top-left-radius: 10px;
+}
+.BracketsC .scoreChampsWinTop {
+  width: 40px;
+  text-align: center;
+  background-color: #145A32;
+  border-top-right-radius: 10px;
+}
+
+.box1 {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #1E1E1E;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.box2 {
+  color: #ffffff;
+  background-color: #ff4655;
+}
+
+.boxUS {
+  display: flex;
+  align-items: center;
+}
+
+.boxuf {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  display: flex;
+  align-items: center;
+}
+
+.boxL {
+  display: flex;
+  align-items: center;
+}
+
+.boxF {
+  grid-column: 5/6;
+  grid-row: 2/7;
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */

@@ -7,6 +7,23 @@ html, body {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 768px) {
+  .Main {  background-size: contain;
+
+ }
+//  .BracketsC {
+//   width: 10%;
+//  }
+//  .box1 {
+//   width: 60px;
+//  }
+//  .box2 {
+//   width: 60px;
+//  }
+//  .boxUS {
+//   width: 60px;
+//  }
+}
 @media (max-width: 575.98px) {
   iframe {
     width: 400px;
@@ -38,13 +55,14 @@ html, body {
   transition: all .5s ease-in-out;
 }
 %Caption {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  caption-side: top;
-  padding: 0px;
-  color: white;
+  caption-side:top;
+  padding:0px;
+  color:white;
   text-align: center;
   background-color: #1E1E1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 %Equipos {
   background-repeat: no-repeat;
@@ -161,7 +179,7 @@ footer {
   justify-content: space-around;
   padding: 0px;
   margin: 0px;
-  .col-3 {
+  .col-3.Index{
   padding: 0;
   display: flex;
   width: 230px;
@@ -318,13 +336,19 @@ footer {
 }
 
 
-caption  {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.CaptionIndex{
+  @extend %Caption
+}
+caption {
   caption-side: top;
   padding: 0px;
   color: white;
+  text-align: center;
+  background-color: #1E1E1E;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+
 .swiper {
   width: 100%;
   padding: 150px 0px;
@@ -472,9 +496,6 @@ caption  {
     }
   }
 }
-.nameclub {
-  padding-left: 10px;
-}
 .CarruselSkins {
   display: flex;
   flex-direction: column;
@@ -497,7 +518,6 @@ caption  {
     align-items: center;
     border-radius: 15px;
     flex-direction: column;
-    padding: 10px;
     iframe {
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
@@ -508,4 +528,135 @@ caption  {
     padding: 10px;
     font-size: 28px;
   }
+}
+.TableChampions {
+ border-collapse: collapse;
+ color: white;
+ width: 400px;
+ height: 250px;
+ background-color: #1E1E1E;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+.col-3.Champions {
+  display: flex;
+  width: 400px;
+  margin: 10px;
+}
+.club {
+  display: inline-flex;
+  padding-left: 20px;
+  width: 100%;
+  align-items: center;
+  height: 60px;
+}
+.nameclub {
+  padding-left: 20px;
+}
+.up {
+  width: 30px;
+  background-color: #145A32;
+  text-align: center;
+}
+.down {
+  background-color: #641E16;
+  text-align: center;
+}
+.score {
+  width: 60px;
+  text-align: center;
+}
+.downRad {
+ background-color: #641E16;
+ text-align: center;
+ border-bottom-left-radius: 10px;
+}
+.grid-layout {
+  display:grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.BracketsC {
+  margin: 10px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #1E1E1E;
+  color: #ffffff;
+  .clubChamps {
+    display: inline-flex;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+  }
+  .scoreChamps {
+    width: 40px;
+    text-align: center;
+  }
+  .clubChampsWin {
+    display: inline-flex;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    background-color: #145A32;
+    border-bottom-left-radius: 10px;
+  }
+  .scoreChampsWin {
+    width: 40px;
+    text-align: center;
+    background-color: #145A32;
+    border-bottom-right-radius: 10px;
+  }
+  .clubChampsWinTop {
+    display: inline-flex;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    background-color: #145A32;
+    border-top-left-radius: 10px;
+  }
+  .scoreChampsWinTop {
+    width: 40px;
+    text-align: center;
+    background-color: #145A32;
+    border-top-right-radius: 10px;
+  }
+}
+.box1 {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color:#1E1E1E;
+  width: 90%;
+  border-radius: 5px;
+}
+.box2 {
+  color: #ffffff;
+  background-color: #ff4655;
+}
+.boxUS {
+  display: flex;
+  align-items: center;
+}
+
+.boxuf {
+  grid-column: 4 / 5;
+  grid-row: 2/4;
+  display: flex;
+  align-items: center;
+}
+.boxL {
+  display: flex;
+  align-items: center;
+}
+.boxF {
+  grid-column: 5/6;
+  grid-row: 2/7;
+  display: flex;
+  align-items: center;
 }
