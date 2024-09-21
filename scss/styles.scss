@@ -8,28 +8,34 @@ html, body {
   padding: 0;
 }
 @media (max-width: 768px) {
-  .Main {  background-size: contain;
- }
+  .main {
+    background-size: contain;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
 @media (max-width: 575.98px) {
+  .main {
+    background-size: contain;
+  }
   iframe {
     width: 400px;
     height: 300px;
   }
-  .Championsinfo {
+  .championsinfo {
     width: 400px;
     height: 360px;
   }
-  .col-12 .Header {
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .col-12.header {
     ul {
       flex-direction: column;
       align-items: center;
       padding: 0;
     }
+  }
+  h1 {
+    font-size: 16px;
   }
 }
 .container {
@@ -61,13 +67,19 @@ html, body {
   background-position: center;
   block-size: cover;
 }
-.Header {
+%Nav {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+}
+.header {
+  background-color: #121212;
+  border-top: 1px solid #ff4655;
+  border-bottom: 1px solid #ff4655;
   ul {
-    display: inline-flex;
-    list-style-type: none;
-    justify-content: center;
-    padding: 10px;
-    margin: 0;
+    @extend %Nav;
     li {
       a{
         text-decoration: none;
@@ -80,13 +92,10 @@ html, body {
     }
   }
 }
-.Headertop {
+.headertop {
+  background-color: #121212;
   ul {
-    display: inline-flex;
-    list-style-type: none;
-    justify-content: center;
-    padding: 10px;
-    margin: 0;
+    @extend %Nav;
     li {
       display: flex;
       color: #ffffff;
@@ -105,16 +114,18 @@ html, body {
 .riotgameslogo {
   width: 60px;
 }
-Main {
+main {
   background-image: url(../images/china1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;  
-  padding: 10px 0px 0px 0px; 
-  .ChampionsTourLogo {
-    width: 160px;
+  padding: 10px 0px 0px 0px;
+  .logochampions {
+    .championstourlogo {
+      width: 160px;
+    }
   }
-  .Logo {
+  .logo {
     margin: 15px;
     display: flex;
     color: white;
@@ -123,9 +134,9 @@ Main {
     align-items: center;
     border-radius: 15px;
     flex-direction: column;
+    padding: 10px 0px 0px 0px;
     h1 {
       padding: 10px;
-      font-size: 28px;
     }
   }
 }
@@ -166,7 +177,7 @@ footer {
   justify-content: space-around;
   padding: 0px;
   margin: 0px;
-  .col-3.Index{
+  .col-3.index{
   padding: 0;
   display: flex;
   width: 230px;
@@ -203,25 +214,25 @@ footer {
         transform: rotate(360deg);
       }
     }
-    .TeamsHome {
+    .teamshome {
       border-collapse: collapse;
       color: white;
       width: 100%;
       height: 210px;
       z-index: 2;
-      .CaptionIndex  {
+      .captionindex  {
         width: 80%;
         margin: 0px 20px;
       }
       tr {
-        .Players {
+        .players {
           align-items: center;
           opacity: 0;
           &:hover {
             opacity: 1;
             transition: all .5s ease-in-out;
             }
-            .Jugadores {
+            .jugadores {
               display: flex;
               width: 100%;
               list-style-type: none;
@@ -321,9 +332,7 @@ footer {
   background-image:url(../icons/champions2024/championsteams/tal.png);
   @extend %Clubes;
 }
-
-
-.CaptionIndex{
+.captionindex{
   @extend %Caption
 }
 caption {
@@ -351,11 +360,16 @@ caption {
   text-align: center;
   border-radius: 10px;
   border: 1px solid #ff4655;
-  .iconsAgents {
+  .iconsagents {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    span {
+      position: absolute;
+      top: 20px;
+      font-size: 30px;
+    }
     i {
       font-size: 20px;
       color: #ffffff;
@@ -429,7 +443,7 @@ caption {
   margin: 60px 0px;
   position: relative;
   overflow: hidden;
-  .Masterslogos {
+  .masterslogos {
     display: flex;
     width: 200px;
     height: 200px;
@@ -442,16 +456,16 @@ caption {
   .tablas{
     display: flex;
     .shangai {
-      @extend %Tablas;
-      @extend %Masters;
+      @extend %tablas;
+      @extend %masters;
     }
     .madrid {
-      @extend %Tablas;
-      @extend %Masters;
+      @extend %tablas;
+      @extend %masters;
     }
   }
 }
-%Tablas {
+%tablas {
   width: 300px;
   height: 300px;
   background-color: #1E1E1E;
@@ -459,7 +473,7 @@ caption {
   justify-content: center;
   border-radius: 10px;
 }
-%Masters {
+%masters {
   .hovertabla {
     display: flex;
     height: 75px;
@@ -483,14 +497,7 @@ caption {
     }
   }
 }
-.CarruselSkins {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-}
-.LogoChampions {
+.logochampions {
   margin: 15px;
   display: flex;
   color: white;
@@ -498,7 +505,7 @@ caption {
   align-items: center;
   border-radius: 15px;
   flex-direction: column;
-  .Championsinfo {
+  .championsinfo {
     background-color: #1E1E1E;
     display: flex;
     justify-content: center;
@@ -516,7 +523,7 @@ caption {
     font-size: 28px;
   }
 }
-.TableChampions {
+.tablechampions {
  border-collapse: collapse;
  color: white;
  width: 400px;
@@ -525,20 +532,20 @@ caption {
  border-bottom-left-radius: 10px;
  border-bottom-right-radius: 10px;
 }
-.col-3.Champions {
+.col-3.champions {
   display: flex;
   width: 400px;
   margin: 10px;
 }
 .club {
   display: inline-flex;
-  padding-left: 20px;
+  padding: 0px 0px 0px 20px;
   width: 100%;
   align-items: center;
   height: 60px;
 }
 .nameclub {
-  padding-left: 20px;
+  padding: 0px 0px 0px 20px;
 }
 .up {
   width: 30px;
@@ -553,7 +560,7 @@ caption {
   width: 60px;
   text-align: center;
 }
-.downRad {
+.downrad {
  background-color: #641E16;
  text-align: center;
  border-bottom-left-radius: 10px;
@@ -565,57 +572,56 @@ caption {
   margin: 0 auto;
   padding: 10px;
   overflow-x: scroll;
-}
-.BracketsC {
-  margin: 10px;
-  width: 90%;
-  border-radius: 10px;
-  background-color: #1E1E1E;
-  color: #ffffff;
-  .clubChamps {
-    display: inline-flex;
-    padding-left: 20px;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .scoreChamps {
-    width: 40px;
-    text-align: center;
-  }
-  .clubChampsWin {
-    display: inline-flex;
-    padding-left: 20px;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #145A32;
-    border-bottom-left-radius: 10px;
-  }
-  .scoreChampsWin {
-    width: 40px;
-    text-align: center;
-    background-color: #145A32;
-    border-bottom-right-radius: 10px;
-  }
-  .clubChampsWinTop {
-    display: inline-flex;
-    padding-left: 20px;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #145A32;
-
-    border-top-left-radius: 10px;
-  }
-  .scoreChampsWinTop {
-    width: 40px;
-    text-align: center;
-    background-color: #145A32;
-    border-top-right-radius: 10px;
+  .bracketsc {
+    margin: 10px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    .clubchamps {
+      display: inline-flex;
+      width: 100%;
+      height: 60px;
+      align-items: center;
+      padding: 10px;
+    }
+    .scorechamps {
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+    }
+    .clubchampswin {
+      display: inline-flex;
+      width: 100%;
+      height: 60px;
+      align-items: center;
+      padding: 10px;
+      background-color: #145A32;
+      border-bottom-left-radius: 10px;
+    }
+    .scorechampswin {
+      width: 40px;
+      text-align: center;
+      background-color: #145A32;
+      padding: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .clubchampswintop {
+      display: inline-flex;
+      width: 100%;
+      height: 60px;
+      align-items: center;
+      padding: 10px;
+      background-color: #145A32;
+      border-top-left-radius: 10px;
+    }
+    .scorechampswintop {
+      width: 40px;
+      text-align: center;
+      padding: 10px;
+      background-color: #145A32;
+      border-top-right-radius: 10px;
+    }
   }
 }
 .box1 {
@@ -632,7 +638,7 @@ caption {
   color: #ffffff;
   background-color: #ff4655;
 }
-.boxUS {
+.boxus {
   display: flex;
   align-items: center;
 }
@@ -643,13 +649,71 @@ caption {
   display: flex;
   align-items: center;
 }
-.boxL {
-  display: flex;
-  align-items: center;
-}
-.boxF {
+.boxf {
   grid-column: 5/6;
   grid-row: 2/7;
   display: flex;
   align-items: center;
+}
+  .carruselskins {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .sliderskins {
+      position: relative;
+      width: 60%;
+      overflow: hidden;
+      .images {
+        display: flex;
+        width: 100%;
+        img {
+          height: 560px;
+          width: 100%;
+          transition: all 0.15s ease;
+        }
+      }
+      .dots {
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        label {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          border: solid 2px #1E1E1E;
+          background-color: #1E1E1E;
+          cursor: pointer;
+          transition: all 0.15s ease;
+          margin: 5px;
+          &:hover {
+            background: #1E1E1E;
+            border: solid 2px #ff4655;
+          }     
+        }
+      }
+    }
+  }
+
+input {
+  display: none;
+}
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+  margin-left: -300%;
+}
+#img5:checked ~ .m5 {
+  margin-left: -400%;
+}
+#img6:checked ~ .m6 {
+  margin-left: -500%;
 }

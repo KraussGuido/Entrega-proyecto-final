@@ -8,29 +8,32 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .Main {
+  .main {
     background-size: contain;
+  }
+  h1 {
+    font-size: 24px;
   }
 }
 @media (max-width: 575.98px) {
+  .main {
+    background-size: contain;
+  }
   iframe {
     width: 400px;
     height: 300px;
   }
-  .Championsinfo {
+  .championsinfo {
     width: 400px;
     height: 360px;
   }
-  .col-12 .Header {
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .col-12 .Header ul {
+  .col-12.header ul {
     flex-direction: column;
     align-items: center;
     padding: 0;
+  }
+  h1 {
+    font-size: 16px;
   }
 }
 .container {
@@ -38,12 +41,12 @@ html, body {
   padding: 0px;
 }
 
-footer ul li a:hover, .Headertop ul li i:hover, .Header ul li a:hover {
+footer ul li a:hover, .headertop ul li i:hover, .header ul li a:hover {
   color: #ff4655;
   transition: all 0.5s ease-in-out;
 }
 
-.CaptionIndex {
+.captionindex {
   caption-side: top;
   padding: 0px;
   color: white;
@@ -60,30 +63,32 @@ footer ul li a:hover, .Headertop ul li i:hover, .Header ul li a:hover {
   block-size: cover;
 }
 
-.Header ul {
+.headertop ul, .header ul {
   display: inline-flex;
   list-style-type: none;
   justify-content: center;
   padding: 10px;
   margin: 0;
 }
-.Header ul li a {
+
+.header {
+  background-color: #121212;
+  border-top: 1px solid #ff4655;
+  border-bottom: 1px solid #ff4655;
+}
+.header ul li a {
   text-decoration: none;
   color: white;
   padding-left: 15px;
 }
-.Headertop ul {
-  display: inline-flex;
-  list-style-type: none;
-  justify-content: center;
-  padding: 10px;
-  margin: 0;
+.headertop {
+  background-color: #121212;
 }
-.Headertop ul li {
+.headertop ul li {
   display: flex;
   color: #ffffff;
 }
-.Headertop ul li i {
+.headertop ul li i {
   text-decoration: none;
   color: white;
   padding-left: 15px;
@@ -92,17 +97,17 @@ footer ul li a:hover, .Headertop ul li i:hover, .Header ul li a:hover {
   width: 60px;
 }
 
-Main {
+main {
   background-image: url(../images/china1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 10px 0px 0px 0px;
 }
-Main .ChampionsTourLogo {
+main .logochampions .championstourlogo {
   width: 160px;
 }
-Main .Logo {
+main .logo {
   margin: 15px;
   display: flex;
   color: white;
@@ -111,10 +116,10 @@ Main .Logo {
   align-items: center;
   border-radius: 15px;
   flex-direction: column;
+  padding: 10px 0px 0px 0px;
 }
-Main .Logo h1 {
+main .logo h1 {
   padding: 10px;
-  font-size: 28px;
 }
 
 .col-12 {
@@ -151,7 +156,7 @@ footer ul li a {
   padding: 0px;
   margin: 0px;
 }
-.row .col-3.Index {
+.row .col-3.index {
   padding: 0;
   display: flex;
   width: 230px;
@@ -165,7 +170,7 @@ footer ul li a {
   position: relative;
   overflow: hidden;
 }
-.row .col-3.Index::before {
+.row .col-3.index::before {
   content: "";
   position: absolute;
   height: 400px;
@@ -173,7 +178,7 @@ footer ul li a {
   background-image: conic-gradient(#ff4655 20deg, transparent 120deg);
   animation: rotar 2s linear infinite;
 }
-.row .col-3.Index::after {
+.row .col-3.index::after {
   content: "";
   position: absolute;
   height: 318px;
@@ -189,26 +194,26 @@ footer ul li a {
     transform: rotate(360deg);
   }
 }
-.row .col-3.Index .TeamsHome {
+.row .col-3.index .teamshome {
   border-collapse: collapse;
   color: white;
   width: 100%;
   height: 210px;
   z-index: 2;
 }
-.row .col-3.Index .TeamsHome .CaptionIndex {
+.row .col-3.index .teamshome .captionindex {
   width: 80%;
   margin: 0px 20px;
 }
-.row .col-3.Index .TeamsHome tr .Players {
+.row .col-3.index .teamshome tr .players {
   align-items: center;
   opacity: 0;
 }
-.row .col-3.Index .TeamsHome tr .Players:hover {
+.row .col-3.index .teamshome tr .players:hover {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }
-.row .col-3.Index .TeamsHome tr .Players .Jugadores {
+.row .col-3.index .teamshome tr .players .jugadores {
   display: flex;
   width: 100%;
   list-style-type: none;
@@ -218,24 +223,24 @@ footer ul li a {
   opacity: 1;
   background-color: #1E1E1E;
 }
-.row .col-3.Index .TeamsHome tr .Players .Jugadores:hover {
+.row .col-3.index .teamshome tr .players .jugadores:hover {
   opacity: 1;
   cursor: pointer;
   padding: 0;
   transition: all 0.3s ease-in-out;
   background-color: #121212;
 }
-.row .col-3.Index .TeamsHome tr .Players .pais {
+.row .col-3.index .teamshome tr .players .pais {
   padding: 10px;
 }
-.row .col-3.Index .TeamsHome tr .Players .paisicon {
+.row .col-3.index .teamshome tr .players .paisicon {
   width: 25px;
 }
-.row .col-3.Index .TeamsHome .stages {
+.row .col-3.index .teamshome .stages {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 20px;
 }
-.row .col-3.Index .TeamsHome ul {
+.row .col-3.index .teamshome ul {
   padding: 0px;
 }
 
@@ -330,13 +335,18 @@ caption {
   border-radius: 10px;
   border: 1px solid #ff4655;
 }
-.swiper-slide .iconsAgents {
+.swiper-slide .iconsagents {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
 }
-.swiper-slide .iconsAgents i {
+.swiper-slide .iconsagents span {
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+}
+.swiper-slide .iconsagents i {
   font-size: 20px;
   color: #ffffff;
 }
@@ -419,7 +429,7 @@ caption {
   position: relative;
   overflow: hidden;
 }
-.col-4 .Masterslogos {
+.col-4 .masterslogos {
   display: flex;
   width: 200px;
   height: 200px;
@@ -464,15 +474,7 @@ caption {
   justify-content: center;
 }
 
-.CarruselSkins {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px;
-}
-
-.LogoChampions {
+.logochampions {
   margin: 15px;
   display: flex;
   color: white;
@@ -481,7 +483,7 @@ caption {
   border-radius: 15px;
   flex-direction: column;
 }
-.LogoChampions .Championsinfo {
+.logochampions .championsinfo {
   background-color: #1E1E1E;
   display: flex;
   justify-content: center;
@@ -489,17 +491,17 @@ caption {
   border-radius: 15px;
   flex-direction: column;
 }
-.LogoChampions .Championsinfo iframe {
+.logochampions .championsinfo iframe {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.LogoChampions h1 {
+.logochampions h1 {
   text-align: center;
   padding: 10px;
   font-size: 28px;
 }
 
-.TableChampions {
+.tablechampions {
   border-collapse: collapse;
   color: white;
   width: 400px;
@@ -509,7 +511,7 @@ caption {
   border-bottom-right-radius: 10px;
 }
 
-.col-3.Champions {
+.col-3.champions {
   display: flex;
   width: 400px;
   margin: 10px;
@@ -517,14 +519,14 @@ caption {
 
 .club {
   display: inline-flex;
-  padding-left: 20px;
+  padding: 0px 0px 0px 20px;
   width: 100%;
   align-items: center;
   height: 60px;
 }
 
 .nameclub {
-  padding-left: 20px;
+  padding: 0px 0px 0px 20px;
 }
 
 .up {
@@ -543,7 +545,7 @@ caption {
   text-align: center;
 }
 
-.downRad {
+.downrad {
   background-color: #641E16;
   text-align: center;
   border-bottom-left-radius: 10px;
@@ -557,55 +559,54 @@ caption {
   padding: 10px;
   overflow-x: scroll;
 }
-
-.BracketsC {
+.grid-layout .bracketsc {
   margin: 10px;
   width: 90%;
   border-radius: 10px;
   background-color: #1E1E1E;
   color: #ffffff;
 }
-.BracketsC .clubChamps {
+.grid-layout .bracketsc .clubchamps {
   display: inline-flex;
-  padding-left: 20px;
   width: 100%;
   height: 60px;
   align-items: center;
-  justify-content: flex-start;
+  padding: 10px;
 }
-.BracketsC .scoreChamps {
+.grid-layout .bracketsc .scorechamps {
   width: 40px;
   text-align: center;
+  padding: 10px;
 }
-.BracketsC .clubChampsWin {
+.grid-layout .bracketsc .clubchampswin {
   display: inline-flex;
-  padding-left: 20px;
   width: 100%;
   height: 60px;
   align-items: center;
-  justify-content: flex-start;
+  padding: 10px;
   background-color: #145A32;
   border-bottom-left-radius: 10px;
 }
-.BracketsC .scoreChampsWin {
+.grid-layout .bracketsc .scorechampswin {
   width: 40px;
   text-align: center;
   background-color: #145A32;
+  padding: 10px;
   border-bottom-right-radius: 10px;
 }
-.BracketsC .clubChampsWinTop {
+.grid-layout .bracketsc .clubchampswintop {
   display: inline-flex;
-  padding-left: 20px;
   width: 100%;
   height: 60px;
   align-items: center;
-  justify-content: flex-start;
+  padding: 10px;
   background-color: #145A32;
   border-top-left-radius: 10px;
 }
-.BracketsC .scoreChampsWinTop {
+.grid-layout .bracketsc .scorechampswintop {
   width: 40px;
   text-align: center;
+  padding: 10px;
   background-color: #145A32;
   border-top-right-radius: 10px;
 }
@@ -626,7 +627,7 @@ caption {
   background-color: #ff4655;
 }
 
-.boxUS {
+.boxus {
   display: flex;
   align-items: center;
 }
@@ -638,14 +639,78 @@ caption {
   align-items: center;
 }
 
-.boxL {
-  display: flex;
-  align-items: center;
-}
-
-.boxF {
+.boxf {
   grid-column: 5/6;
   grid-row: 2/7;
   display: flex;
   align-items: center;
+}
+
+.carruselskins {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carruselskins .sliderskins {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+.carruselskins .sliderskins .images {
+  display: flex;
+  width: 100%;
+}
+.carruselskins .sliderskins .images img {
+  height: 560px;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+.carruselskins .sliderskins .dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.carruselskins .sliderskins .dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid 2px #1E1E1E;
+  background-color: #1E1E1E;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.carruselskins .sliderskins .dots label:hover {
+  background: #1E1E1E;
+  border: solid 2px #ff4655;
+}
+
+input {
+  display: none;
+}
+
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+}
+
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+}
+
+#img4:checked ~ .m4 {
+  margin-left: -300%;
+}
+
+#img5:checked ~ .m5 {
+  margin-left: -400%;
+}
+
+#img6:checked ~ .m6 {
+  margin-left: -500%;
 }/*# sourceMappingURL=styles.css.map */
